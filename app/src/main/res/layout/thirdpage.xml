@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@drawable/fffff"
+    android:backgroundTintMode="src_atop"
+    android:textColor="#000000"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        >
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_margin="10dp"
+         android:weightSum="2"
+          >
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:text="Name *"
+
+            android:textSize="20dp"
+            android:textColor="#000000"/>
+
+          <EditText
+              android:layout_weight="1"
+              android:id="@+id/name"
+              android:minWidth="50dp"
+              android:paddingLeft="5dp"
+              android:textSize="20dp"
+              android:background="@drawable/border"
+              android:inputType="textPersonName|textAutoComplete"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:imeOptions="actionDone"
+              android:padding="5dp"
+              android:text=""
+              />
+
+      </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:weightSum="2">
+
+            <TextView
+
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:text="Address *"
+                android:textSize="20dp"
+                android:layout_weight="1"
+                android:textColor="#000000"/>
+
+            <EditText
+                android:id="@+id/address"
+                android:paddingLeft="5dp"
+                android:background="@drawable/border"
+                android:inputType="textPostalAddress|textAutoComplete"
+                android:layout_width="wrap_content"
+                android:imeOptions="actionDone"
+                android:padding="5dp"
+                android:textSize="20dp"
+                android:minWidth="50dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+          />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:weightSum="2">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Company Name *"
+                android:layout_marginRight="5dp"
+                android:textSize="20dp"
+                android:layout_weight="1"
+                android:textColor="#000000"/>
+
+            <EditText
+                android:layout_weight="1"
+                android:id="@+id/company"
+                android:paddingLeft="5dp"
+                android:padding="5dp"
+                android:inputType="text|textAutoComplete"
+                android:background="@drawable/border"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:imeOptions="actionDone"
+                android:minWidth="50dp"
+                android:textSize="20dp"
+                android:text=""/>
+
+        </LinearLayout>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:clickable="true"
+            android:textSize="20dp"
+            android:id="@+id/additional"
+            android:enabled="true"
+            android:text="Additional Guests"
+            android:textColor="#000000"/>
+        <LinearLayout
+            android:id="@+id/add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:orientation="vertical"
+        android:gravity="right"
+            >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:weightSum="2">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name *"
+                android:layout_weight="1"
+                android:textSize="20dp"
+                android:textColor="#000000"/>
+
+            <EditText
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:inputType="textPersonName|textAutoComplete"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border"
+                android:imeOptions="actionDone"
+                android:id="@+id/addname"
+                android:padding="5dp"
+                android:minWidth="50dp"
+                android:textSize="20dp"
+                android:paddingLeft="5dp"
+                android:text=""/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:weightSum="2">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Relation *"
+                android:textSize="20dp"
+                android:layout_weight="1"
+                android:textColor="#000000"/>
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:background="@drawable/border"
+                android:id="@+id/addrel"
+                android:padding="5dp"
+                android:textSize="20dp"
+                android:layout_weight="1"
+                android:imeOptions="actionDone"
+                android:inputType="text|textAutoComplete"
+                android:text=""/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:weightSum="2">
+
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Phone No. *"
+                android:textSize="20dp"
+            android:textColor="#000000"/>
+
+            <EditText
+                android:layout_weight="1"
+                android:minWidth="50dp"
+                android:layout_width="wrap_content"
+                android:paddingLeft="5dp"
+                android:id="@+id/addphone"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border"
+                android:imeOptions="actionDone"
+                android:padding="5dp"
+                android:textSize="20dp"
+                android:inputType="textAutoComplete|number"
+                android:digits="0123456789+"
+                android:text="                            "/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:weightSum="2"
+        android:padding="10dp">
+        <Button
+            android:id="@+id/but"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Previous"
+            android:layout_marginBottom="10dp"
+            android:textColor="#000000"
+            android:onClick="typed"
+            />
+
+        <Button
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Next"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="10dp"
+            android:textColor="#000000"
+            android:onClick="purposed"
+            />
+    </RelativeLayout>
+    <ProgressBar
+        android:id="@+id/progressBar2"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="7"
+        android:progress="5"/>
+
+</RelativeLayout>

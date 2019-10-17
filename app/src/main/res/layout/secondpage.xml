@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/fffff"
+    android:backgroundTintMode="src_atop"
+    android:textColor="#000000"
+
+    >
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        >
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:id="@+id/type"
+            android:layout_height="wrap_content"
+            >
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="MANAGEMENT GUESTS"
+                android:textSize="20dp"
+                android:padding="5dp"
+                android:id="@+id/management"
+                android:textColor="#000000"
+                android:layout_margin="15dp"
+                android:background="@drawable/border"
+                />
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="GUESTS"
+                android:id="@+id/guests"
+                android:textColor="#D62E2E"
+                android:background="@drawable/border"
+                android:padding="5dp"
+                android:textSize="20dp"
+                android:layout_margin="15dp"
+                />
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="CLIENT"
+                android:textSize="20dp"
+                android:id="@+id/client"
+                android:textColor="#4F000706"
+                android:padding="5dp"
+
+                android:layout_margin="15dp"
+                android:background="@drawable/border"
+
+                />
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="CANDIDATES"
+                android:id="@+id/candidates"
+                android:padding="5dp"
+                android:textSize="20dp"
+                android:textColor="#7A2219"
+                android:layout_margin="15dp"
+                android:background="@drawable/border"
+
+                />
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="OTHERS"
+                android:padding="5dp"
+                android:id="@+id/others"
+                android:textSize="20dp"
+                android:layout_margin="15dp"
+                android:background="@drawable/border"
+
+                />
+        </RadioGroup>
+                <EditText
+                    android:id="@+id/other"
+                    android:padding="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:inputType="text"
+                    android:minWidth="300dp"
+                    android:imeOptions="actionDone"
+                    android:background="@drawable/border"/>
+
+          </LinearLayout>
+<ProgressBar
+        android:id="@+id/progressBar2"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="7"
+        android:progress="4"/>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:weightSum="2"
+        android:padding="10dp">
+    <Button
+        android:id="@+id/but"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Previous"
+        android:layout_marginBottom="10dp"
+        android:textColor="#000000"
+        android:onClick="login"
+        />
+
+    <Button
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Next"
+
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="10dp"
+        android:textColor="#000000"
+        android:onClick="infodd"
+        />
+    </RelativeLayout>
+    </RelativeLayout>

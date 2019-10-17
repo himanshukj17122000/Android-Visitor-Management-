@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">mockups</string>
+    <string name="country_prompt">Choose an option</string>
+
+    <string-array name="country_arrays" size="30dp" color="#000000">
+        <item>Official</item>
+        <item>Personal</item>
+        <item>Interview</item>
+        <item>Enquiry</item>
+
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="sqll">TEXT,</string>
+</resources>

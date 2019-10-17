@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+    android:background="@drawable/fffff"
+    android:backgroundTintMode="src_atop"
+    >
+        <TextView
+            android:id="@+id/jjj"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Please enter your phone number"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:textSize="20dp"
+            android:textColor="#000000"
+            />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_below="@id/jjj"
+            android:paddingLeft="5dp"
+            android:padding="5dp"
+            android:textSize="20dp"
+            android:minWidth="500dp"
+            android:id="@+id/mobile"
+            android:imeOptions="actionDone"
+            android:maxLength="10"
+            android:background="@drawable/border"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:inputType="number|textVisiblePassword|textAutoComplete"
+            android:digits="0123456789+"/>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:weightSum="2"
+        android:padding="10dp">
+        <Button
+            android:id="@+id/butp"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Previous"
+            android:layout_marginBottom="10dp"
+            android:textColor="#000000"
+
+            />
+
+        <Button
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Next"
+            android:id="@+id/nextp"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="10dp"
+            android:textColor="#000000"
+
+            />
+    </RelativeLayout>
+
+
+    </RelativeLayout>
+
